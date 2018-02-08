@@ -44,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
         InputStream stream = null;
         try {
-            stream = this.getAssets().open("boleto.pdf");
+            stream = this.getAssets().open("gru.pdf");
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        Bitmap bitmap = generateImageFromPdf("boleto.pdf", 0, 800, 1000);
+        Bitmap bitmap = generateImageFromPdf("gru.pdf", 0, 2479, 3508);
         System.out.println("aqui 21 " + bitmap);
         if (bitmap != null) {
             setBitMap(bitmap);
